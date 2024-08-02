@@ -22,17 +22,14 @@ num calculateAge(yearofBirth){
 
 import 'dart:io';
 
-void main(){
-  
+void main() {
   print("what is your admNo?");
-  admNo=int.parse(stdin.readLineSync()!);
-if(admNo == 8454){
-  print("Welcome back Ann!");
-}
- else{
-  print("unrecognised student admNo");
- }
+  admNo = int.parse(stdin.readLineSync()!);
+  if (admNo == 8454) {
+    print("Welcome back Ann!");
+  } else {
+    print("unrecognised student admNo");
+  }
 }
 
-  int? admNo;
-
+int? admNo;
