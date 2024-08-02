@@ -1,4 +1,4 @@
-/*import "dart:io";
+import "dart:io";
 
  String? name;
  int? yearofBirth;
@@ -17,10 +17,26 @@ num calculateAge(yearofBirth){
   yearofBirth=int.parse(stdin.readLineSync()!);
   //readByteSync is for integers 
   print("Congratulations ${name} on ${calculateAge(yearofBirth)} years of living!");
+  ageGroup();
 }
-*/
+void ageGroup(){
+ if(calculateAge(yearofBirth) < 18 && calculateAge(yearofBirth)>=13){
+  print("You are a teenager");
+ }
+ else if(calculateAge(yearofBirth) >= 18 ){
+print("You are an adult");
+ }
+ else{
+  print("You are children");
+ }
+}
 
-import 'dart:io';
+
+
+
+
+
+/*import 'dart:io';
 
 void main() {
   print("what is your admNo?");
@@ -33,3 +49,4 @@ void main() {
 }
 
 int? admNo;
+*/
