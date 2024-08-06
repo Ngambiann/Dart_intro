@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 void main(){
 print("Enter radius: ");
 radius=double.parse(stdin.readLineSync()!);
@@ -7,11 +8,12 @@ print( "Area:${calculateArea(radius)}");
  //calling a method
 }
 
- final Pi =3.142;
  double? radius; 
+ final exponent=2;
  //function to calculate area
  double calculateArea(radius){
-  double area= Pi * radius * radius;
+  (pi);
+  double area= pi * pow(radius, exponent);
   return area;
  }
  //user input

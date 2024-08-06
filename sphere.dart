@@ -19,9 +19,9 @@ void sphereSize() {
     }
   }
 double? radius;
-const pi = 3.142;
 const exponent = 3;
 double CalculateVolume(radius) {
+ (pi);
   double volume = 4 / 3 * pi * pow(radius, exponent);
   return (volume);
 }
