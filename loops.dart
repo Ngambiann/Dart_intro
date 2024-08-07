@@ -69,17 +69,19 @@ void naturalNumbers() {
     print('Natural numbers:$m');
     m++;
   }
-  int y=1;
-  do{
-    print('Natural numbers:$y');y++;
-  }while(y<= 10);
+  int y = 1;
+  do {
+    print('Natural numbers:$y');
+    y++;
+  } while (y <= 10);
 }
 
 //COLLECTIONS:
-List colors = ["Blue", "Grey", "Yellow", "Red"];
+
+List/*<String>*/ colors = ["Blue", "Grey", "Yellow", "Red"];
 
 void printcolors() {
-  colors.forEach(print);
+  //colors.forEach(print);
   colors.add("Green");
   colors.forEach(print);
 }
@@ -88,5 +90,39 @@ void main() {
   //printAllArray();
   //printcolors();
   //learnloops();
-  naturalNumbers();
+  // naturalNumbers();
+  //mapscapitals();
+  universities();
+}
+
+void mapscapitals() {
+  Map/*<String:String>*/ capitals = {
+    'USA': 'Washington, D.C.',
+    'India': 'New Delhi',
+    'Japan': 'Tokyo'
+  };
+
+  capitals['Germany'] = 'Berlin';
+  //adds
+
+  for (var nations in capitals
+      .keys) /*iterates through the keys and print their coresponding values*/ {
+    print('The capital of $nations is ${capitals[nations]}');
+  }
+}
+
+//MAPS:
+void universities() {
+  Map uni = {
+    'Strathmore uni': 'Private',
+    'JKUAT uni': 'Public',
+    'USIU uni': 'Private',
+    'Kenyatta uni': 'Public',
+  };
+
+  uni['Daystar uni'] = 'Private';
+
+  for (var univasity in uni.keys){
+    print('$univasity is ${uni[univasity]} ');
+  }
 }

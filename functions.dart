@@ -1,28 +1,14 @@
-import 'dart:io';
-
-
-
-
 void factorials() {
-  num? digit;
-  print('Enter digit to find out its factorial:');
-  digit = int.parse(stdin.readLineSync()!);
+  int digit = 5;
   print('The factorial of ${digit} is ${calculatefactorial(digit)}');
-
 }
- 
-int calculatefactorial(digit){
-  int factorial=digit * --digit;
-  
-  for(int factorial= factorial; factorial<=factorial;factorial--){
-    print(factorial);
-  }
+
+int calculatefactorial(digit) {
+  int factorial = digit * --digit * --digit * --digit;
+
   return factorial;
-  
-  }
- 
+}
 
 void main() {
   factorials();
- 
 }
